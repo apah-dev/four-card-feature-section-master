@@ -29,7 +29,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [Add solution URL here](https://github.com/apah-dev/four-card-feature-section-master.git)
 - Live Site URL: [Add live site URL here](https://your-live-site-url.com)
 
 ## My process
@@ -43,30 +43,32 @@ Users should be able to:
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+Learn how to properly use the align-self property and how to use it for self-aligning contents withing a flexbox div.
 
 To see how you can add code snippets, see below:
 
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
-
 ```css
-.proud-of-this-css {
-  color: papayawhip;
+.middle-set {
+  justify-content: center;
+  align-items: center;
 }
-```
 
-```js
-const proudOfThisFunc = () => {
-  console.log("🎉");
-};
+.tools {
+  width: 80%;
+}
+
+.tools:nth-of-type(1) {
+  align-self: flex-center;
+}
+
+.tools:nth-of-type(4) {
+  align-self: center;
+}
 ```
 
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
+- [HTML & CSS Udemy Course](https://www.udemy.com/course/the-web-developer-bootcamp/learn/lecture/22380972#notes) - This helped with properly understanding the align-self property and how to use it for self-aligning contents withing a flexbox div.
 
 ## Author
 
@@ -75,4 +77,4 @@ const proudOfThisFunc = () => {
 
 ## Acknowledgments
 
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
+Thanks to Colt for the udemy course https://www.udemy.com/course/the-web-developer-bootcamp/learn/lecture/22380972#notes
