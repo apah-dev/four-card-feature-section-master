@@ -1,0 +1,143 @@
+
+* {
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --Red: hsl(0, 78%, 62%);
+  --Cyan: hsl(180, 62%, 55%);
+  --Orange: hsl(34, 97%, 64%);
+  --Blue: hsl(212, 86%, 64%);
+  --VeryDarkBlue: hsl(234, 12%, 34%);
+  --GrayishBlue: hsl(229, 6%, 66%);
+  --VeryLightGray: hsl(0, 0%, 98%);
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  min-height: 100vh;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  max-width: 100%;
+}
+
+.first-section {
+  text-align: justify;
+  margin-bottom: 2rem;
+}
+
+.first-section h1 span {
+  color: rgb(159, 159, 159);
+  font-weight: 200;
+}
+
+p {
+  color: rgb(159, 159, 159);
+  font-size: 1em;
+}
+h2 {
+  font-size: 1rem;
+  margin-bottom: -0.2rem;
+}
+
+.second-section p {
+  font-size: 0.7em;
+}
+
+/* .second-section .description {
+  border: 2px solid salmon;
+} */
+
+.second-section {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.second-section .tools {
+  padding: 0.2rem 1.2rem;
+  min-height: 180px;
+  box-shadow: 0rem 1rem 2rem -1rem var(--GrayishBlue);
+  border-radius: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.middle-set {
+  display: flex;
+  flex-basis: 100%;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.tools-icon {
+  width: 2.5rem;
+}
+
+.second-section .tools:nth-of-type(1) {
+  border-top: var(--Cyan) solid 4px;
+}
+.middle-set .tools:nth-of-type(1) {
+  border-top: var(--Red) solid 4px;
+}
+.middle-set .tools:nth-of-type(2) {
+  border-top: var(--Orange) solid 4px;
+}
+
+.second-section .tools:nth-of-type(3) {
+  border-top: var(--Blue) solid 4px;
+}
+
+.icon-div {
+  align-self: flex-end;
+  padding: 0.5rem;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 58rem) {
+  .first-section {
+    max-width: 35%;
+    text-align: center;
+  }
+  .second-section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0rem;
+    height: 500px;
+    padding: 2rem;
+    width: 80%;
+  }
+
+  .middle-set {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .tools {
+    width: 80%;
+  }
+
+  .tools:nth-of-type(1) {
+    align-self: flex-center;
+  }
+
+  .tools:nth-of-type(4) {
+    align-self: center;
+  }
+}
