@@ -8,6 +8,7 @@
   --Cyan: hsl(180, 62%, 55%);
   --Orange: hsl(34, 97%, 64%);
   --Blue: hsl(212, 86%, 64%);
+  --LightBlue: hsl(212, 96%, 81%);
   --VeryDarkBlue: hsl(234, 12%, 34%);
   --GrayishBlue: hsl(229, 6%, 66%);
   --VeryLightGray: hsl(0, 0%, 98%);
@@ -64,7 +65,7 @@ h2 {
 .second-section .tools {
   padding: 0.2rem 1.2rem;
   min-height: 180px;
-  box-shadow: 0rem 1rem 2rem -1rem var(--GrayishBlue);
+  box-shadow: 0rem 1rem 2rem -1rem var(--LightBlue);
   border-radius: 0.5rem;
   display: flex;
   flex-direction: column;
