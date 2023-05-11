@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Frontend Mentor | Four card feature section</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      * {
+        padding: 0;
+        box-sizing: border-box;
+      }
+      :root {
+        --Red: hsl(0, 78%, 62%);
+        --Cyan: hsl(180, 62%, 55%);
+        --Orange: hsl(34, 97%, 64%);
+        --Blue: hsl(212, 86%, 64%);
+        --VeryDarkBlue: hsl(234, 12%, 34%);
+        --GrayishBlue: hsl(229, 6%, 66%);
+        --VeryLightGray: hsl(0, 0%, 98%);
+      }
+
+      body {
+        font-family: "Poppins", sans-serif;
+        font-size: 15px;
+        min-height: 100vh;
+      }
+      main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 2rem;
+        max-width: 100%;
+      }
+
+      .first-section {
+        text-align: justify;
+        margin-bottom: 2rem;
+      }
+
+      .first-section h1 span {
+        color: rgb(159, 159, 159);
+        font-weight: 200;
+      }
+
+      p {
+        color: rgb(159, 159, 159);
+        font-size: 1em;
+      }
+      h2 {
+        font-size: 1rem;
+        margin-bottom: -0.2rem;
+      }
+
+      .second-section p {
+        font-size: 0.7em;
+      }
+
+      /* .second-section .description {
+        border: 2px solid salmon;
+      } */
+
+      .second-section {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+      }
+
+      .second-section .tools {
+        padding: 0.2rem 1.2rem;
+        min-height: 180px;
+        box-shadow: 0rem 1rem 2rem -1rem var(--GrayishBlue);
+        border-radius: 0.5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+      }
+
+      .middle-set {
+        display: flex;
+        flex-basis: 100%;
+        flex-direction: column;
+        gap: 2rem;
+      }
+
+      .tools-icon {
+        width: 50px;
+      }
+
+      .second-section .tools:nth-of-type(1) {
+        border-top: var(--Cyan) solid 4px;
+      }
+      .middle-set .tools:nth-of-type(1) {
+        border-top: var(--Red) solid 4px;
+      }
+      .middle-set .tools:nth-of-type(2) {
+        border-top: var(--Orange) solid 4px;
+      }
+
+      .second-section .tools:nth-of-type(3) {
+        border-top: var(--Blue) solid 4px;
+      }
+
+      .icon-div {
+        align-self: flex-end;
+        padding: 0.5rem;
+      }
+
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+
+      @media (min-width: 58rem) {
+        .first-section {
+          max-width: 35%;
+          text-align: center;
+        }
+        .second-section {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          gap: 0rem;
+          border: 2px solid salmon;
+          height: 500px;
+          padding: 2rem;
+          width: 80%;
+        }
+
+        .middle-set {
+          justify-content: center;
+          align-items: center;
+        }
+
+        .tools {
+          width: 80%;
+        }
+
+        .tools:nth-of-type(1) {
+          align-self: flex-center;
+        }
+
+        .tools:nth-of-type(4) {
+          align-self: center;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <section class="first-section">
+        <h1><span>Reliable, efficient delivery</span> Powered by Technology</h1>
+        <p>
+          Our Artificial Intelligence powered tools use millions of project data
+          points to ensure that your project is successful
+        </p>
+      </section>
+      <section class="second-section">
+        <div class="tools">
+          <div class="description">
+            <h2>Supervisor</h2>
+            <p>Monitors activity to identify project roadblocks</p>
+          </div>
+
+          <div class="icon-div">
+            <img
+              class="tools-icon"
+              src="images/icon-supervisor.svg"
+              alt="supervisor"
+            />
+          </div>
+        </div>
+        <div class="middle-set">
+          <div class="tools">
+            <div class="description">
+              <h2>Team Builder</h2>
+              <p>
+                Scans our talent network to create the optimal team for your
+                project
+              </p>
+            </div>
+
+            <div class="icon-div">
+              <img
+                class="tools-icon"
+                src="images/icon-team-builder.svg"
+                alt="team"
+              />
+            </div>
+          </div>
+
+          <div class="tools">
+            <div class="description">
+              <h2>Karma</h2>
+              <p>Regularly evaluates our talent to ensure quality</p>
+            </div>
+            <div class="icon-div">
+              <img class="tools-icon" src="images/icon-karma.svg" alt="Karma" />
+            </div>
+          </div>
+        </div>
+
+        <div class="tools">
+          <div class="description">
+            <h2>Calculator</h2>
+            <p>
+              Uses data from past projects to provide better delivery estimates
+            </p>
+          </div>
+
+          <div class="icon-div">
+            <img
+              class="tools-icon"
+              src="images/icon-calculator.svg"
+              alt="Calculator"
+            />
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">Your Name Here</a>.
+      </p>
+    </footer>
+  </body>
+</html>
